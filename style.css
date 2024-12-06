@@ -1,0 +1,245 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      /* background-color: rgb(121, 135, 255); */
+    }
+
+    .main {
+      padding: 10px;
+      width: 100%;
+      position: relative;
+      font-family: "Poppins", sans-serif;
+    }
+
+    #input-search {
+      display: flex;
+      justify-content: center;
+    }
+
+    #test-parent {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;     
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      /* row-gap: 20px;
+      column-gap: 15px; */
+      height: auto;
+    }
+
+    #mainLink {
+      text-decoration: none;
+      background-color: transtest-parent;
+      color: #000;
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+    }   
+
+    #mainLink:hover {
+      color: #000;
+    }
+    .Buy-btn{
+        margin-top: 10px;
+        background-color: #0365b6;
+        border: none;
+        color: white;
+        padding: 9px 15px;
+        text-align: center;       
+        display: inline-block;
+        font-size: 15px;   
+        border-radius: 5px;    
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .Buy-btn:hover{
+        background-color: #2095f4;
+        box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    }
+
+    .child {
+      flex-shrink: 0;
+      /* color: #fff; */
+      width: 31%;
+      height:max-content;
+      /* background-color: rgb(26, 26, 27); */
+      padding: 18px;
+      border-radius: 8px;
+      position: relative;
+      box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%);
+      transition: all 0.3s ease;
+      margin: 10px;
+    }
+    .child:hover{
+        box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    }
+
+    .actionbtn {
+      margin-top: 3px;
+      padding: 0;
+    }
+
+    .actionbtn a {
+      margin: 4px 0;
+      font-size: 13px;
+      display: inline-block;
+      background-color: rgba(64, 64, 64, 0.837);
+      color: rgb(230, 230, 230);
+      padding: 5px 8px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .actionbtn a:hover {
+      color: #fff;
+      background-color: rgba(14, 13, 13, 0.811);
+    }
+
+    .show-price {
+      display: flex;
+      justify-content: flex-start;
+      align-items: start;
+      gap: 10px;
+    }
+
+    .show-price>span:nth-child(1) {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .show-price>span:nth-child(2) {
+      display: flex;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    .show-price>span:nth-child(2) span:nth-of-type(1) {
+      text-decoration: line-through;
+      opacity: 0.8;
+    }
+
+    .show-price>span:nth-child(2) span:nth-of-type(2) {
+      color: rgb(0, 159, 0);
+      font-weight: 600;
+
+    }
+
+    .hr-line {
+      width: 27%;
+      opacity: 0.2;
+    }
+
+    .content {
+      display: flex;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    .content .content1 i {
+      color: rgb(255, 68, 68);
+      font-size: 14px;
+    }
+
+    .likes {
+      font-size: 15px;
+    }
+
+    .likes i {
+      color: rgb(255, 68, 68);
+    }
+
+    .content .content1>span:nth-of-type(1) {
+      font-weight: 500;
+    }
+
+    .course-category span:nth-of-type(1) {
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    .course-category span:nth-of-type(2) {
+      font-size: 14px;
+    }
+
+    .child img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+
+    .child h1 {
+      font-size: 16px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      color: rgb(83, 81, 81);
+      font-weight: 500;
+      line-height: 1.3;
+
+    }
+
+    #search {
+      width: 40%;
+      padding: 10px 15px;
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 15px;
+      /* border: none; */
+      outline: none;
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      .child {
+        width: 45%;
+      }
+
+      .child h1 {
+        font-size: 16px;
+      }
+
+      #test-parent {
+        gap: 10px;
+      }
+
+      .content {
+        gap: 7px;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .child {
+        flex-shrink: 1;
+        width: 100%;
+      }
+
+      .child h1 {
+        font-size: 16px;
+        line-height: 20px;
+        padding-bottom: 5px;
+      }
+
+      #search {
+        width: 80%;
+      }
+
+      .likes {
+        display: none;
+      }
+
+      .course-category {
+        display: none;
+      }
+
+    }
